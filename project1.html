@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url('a.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;   
+            /* height: 900px;        */
+        }
+        .header{
+            /* background-image: url('transparent.png'); */
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 30px;
+        }
+        .left img{
+            width: 50px;
+            margin: auto;
+            display: block;
+        }
+        .left h4{
+            font-family: cursive;
+            margin-top: 6px;
+            color: white;
+            text-align: center;
+        }
+        .mid{
+            /* border: 2px solid blue; */
+            display: block;
+            margin: 20px auto;
+            width: 42%;
+            /* position: fixed;
+            left: 32%; */
+        }
+        .right{
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 36px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 16px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: yellow;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            font-family: cursive;
+        }
+        .btn:hover{
+            background-color: darkgrey;
+        }
+        .container{
+            border: 2px solid white;
+            margin: 100px 60px;
+            padding: 30px 70px;
+            width: 33%;
+            border-radius: 10px;
+            background-image: url('transparent.png');
+            enable-background: 0vmin;    
+            font-family: cursive;     
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 6px auto;
+            font-size: 16px;
+            border-radius: 10px;
+            font-family: cursive;
+        }
+        .container h3{
+            text-align: center;
+            color: white; 
+        }
+        .container button{
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            width: 103%;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="icon.png" alt="">
+            <h4>Zee's Works</h4>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active" target="_blank">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Me Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>join our best team</h3>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone No">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
